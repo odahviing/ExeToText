@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E73F25BE-C704-42AF-B44B-7AE0FA2FDC1A}</ProjectGuid>
+    <ProjectGuid>{61345113-9FDA-4D1C-8065-777FBF2AA8F1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>KeyboardWriterCpp</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
