@@ -12,13 +12,13 @@ void finalExit(string error);
 
 BOOL DEBUG = FALSE;
 DWORD SLEEP = 5000;
-WORD DELAY = 8;
+WORD DELAY = 15;
 
 char * fileName;
 
 void main(int argc, char ** argv)
 {
-	cout << "### Keyboard Writer - Version 2.0 ###" << endl;
+	cout << "Keyboard Writer - Version 2.0 by Odahviing" << endl;
 	argsWorking(argc, argv);
 
 	ifstream myBatFile;
@@ -29,8 +29,8 @@ void main(int argc, char ** argv)
 	HKL kbl = GetKeyboardLayout(0);
 	WORD counter = 0;
 	Sleep(SLEEP);
-
-	for (std::string line; getline(myBatFile, line); )
+	
+	for (string line; getline(myBatFile, line); )
 	{
 		for each (char chr in line)
 		{
@@ -44,7 +44,9 @@ void main(int argc, char ** argv)
 					counter = 0;
 				}
 			}
+			
 		}
+		cout << endl;
 	}
 
 	myBatFile.close();
