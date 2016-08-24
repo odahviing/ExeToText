@@ -6,9 +6,8 @@
 using namespace std;
 
 VOID writeLetter(HKL layout, CHAR chr);
-void argsWorking(int argc, char ** argv);
+void argsHandling(int argc, char ** argv);
 void finalExit(string error);
-
 
 BOOL DEBUG = FALSE;
 DWORD SLEEP = 5000;
@@ -19,8 +18,7 @@ char * fileName;
 void main(int argc, char ** argv)
 {
 	cout << "Keyboard Writer - Version 2.0 by Odahviing" << endl;
-	argsWorking(argc, argv);
-
+	argsHandling(argc, argv);
 	ifstream myBatFile;
 	myBatFile.open(fileName);
 
@@ -44,18 +42,16 @@ void main(int argc, char ** argv)
 					counter = 0;
 				}
 			}
-			
 		}
 		cout << endl;
 	}
-
 	myBatFile.close();
 }
 
-// Win Api
+// Windows API
 VOID writeLetter(HKL layout, CHAR chr)
 {
-	if (DEBUG == TRUE)
+	if (DEBUG == TRUE) // Debug mode for bypassing the real typing
 	{
 		cout << chr;
 		return;
@@ -73,12 +69,10 @@ VOID writeLetter(HKL layout, CHAR chr)
 	SendInput(1, &ip, sizeof(INPUT));
 }
 
-void argsWorking(int argc, char ** argv)
+void argsHandling(int argc, char ** argv)
 {
 	if (argc == 1)
-	{
 		finalExit("Missing Text File Argument");
-	}
 
 	int i = 1;
 	if (argc > 2)
