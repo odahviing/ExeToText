@@ -109,7 +109,7 @@ void argsHandling(int argc, char ** argv)
 
 void finalExit(string error) 
 { 
-	cout << "KeyboardWriter.exe [-p] [-d time] textFilePath" << endl; 
+	cout << "KeyboardTyper.exe [-p] [-d time] textFilePath" << endl; 
 	cout << error << endl; 
 	exit(0);
 }
