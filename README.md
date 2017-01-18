@@ -20,7 +20,7 @@ ExeToBat.exe -e "explorer.exe" // Will make explorer.bat and explorer.exe
 
 <b>KeyboardTyper</b> - Utility that "types" text to a focus window<br />
 KeyboardTyper.exe [-p] [-d time] textFilePath<br />
-p = Debug Mode<br />
+p = Debug Mode, print to STDOUT for testing<br />
 d = Time delay before stop typing (in miliseconds) - Default is 5 seconds<br />
 textFilePath = the text file to be typed<br />
 
