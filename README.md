@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # README #
 
 Repository Moved To Github
@@ -33,7 +32,3 @@ d = Time delay before stop typing (in miliseconds) - Default is 5 seconds<br />
 textFilePath = the text file to be typed<br />
 
 Enjoy
-<<<<<<< Updated upstream
->>>>>>> 95431ff455fa21291d4100e7e63cc98d142cffef
-=======
->>>>>>> Stashed changes

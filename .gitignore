@@ -1,11 +1,8 @@
+bin/
 obj/
 Debug/
 Release/
 .vs/
-<<<<<<< Updated upstream
-
-=======
 ExeToBat/bin/
 KeyboardTyper/bin/
-ExeToText.sln
->>>>>>> Stashed changes
+*.sln
